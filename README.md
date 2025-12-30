@@ -1,6 +1,7 @@
 # Project-with-16x2-display-using-arduino-nano
 
 
+
 # Arduino 16×2 LCD Message Display
 
 ## Description
@@ -13,6 +14,24 @@ This project uses an **Arduino Nano** and a **16×2 LCD** to display custom mess
 * Create and show custom characters (emoji-style icons)
 * Adjustable backlight using PWM
 * Simple Arduino interface for easy customization
+
+## Wiring
+
+| LCD Pin  | Arduino Pin | Notes             |
+| -------- | ----------- | ----------------- |
+| VSS (1)  | GND         | Ground            |
+| VDD (2)  | 5V          | Power             |
+| V0  (3)  | GND / Pot   | Contrast control  |
+| RS  (4)  | D7          | Register Select   |
+| RW  (5)  | GND         | Always ground     |
+| E   (6)  | D8          | Enable            |
+| D4  (11) | D9          | Data 4            |
+| D5  (12) | D10         | Data 5            |
+| D6  (13) | D11         | Data 6            |
+| D7  (14) | D12         | Data 7            |
+| A   (15) | 5V via 220Ω | Backlight Anode   |
+| K   (16) | GND         | Backlight Cathode |
+
 
 ## Hardware
 
